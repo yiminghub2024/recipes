@@ -103,6 +103,7 @@ mooncake_vllm_config:
     # Store node's RDMA NIC list("mlx5_0,mlx5_1,..."). Fill from the Endpoints
     # panel or export MOONCAKE_STORE_DEVICE_NAME before pasting (unquoted heredoc);
     # unset to "" = auto-selection.
+    # you can use  "ibstat" command to see what's the name of your own rdma network card 
     device_name: "$MOONCAKE_DEVICE_NAME"
     # DirectIO SSD offload staging — off for the plain DRAM pool. If turned
     # on it must be true on all three components (mooncake_master, store
